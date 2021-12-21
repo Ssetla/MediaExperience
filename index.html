@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Title</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js" ></script>
+        <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/bka3pgm.css">
+    </head>
+    <body>
+    <div class="container">
+
+        <div class="page" id="start">
+            <!-- <div id="startContainer"> -->
+                <h1>EXPLORING PORTUGAL</h1>
+                <a class="startButton" href="#">Start Exploring</a>
+            <!-- </div> -->
+        </div>
+
+        <div id="navbar">
+
+          <!--   <button type="button" onclick="zoomin()"> +</button>
+            <button type="button" onclick="zoomout()"> -</button> -->
+        <!--<button type="button2" onclick="restart()">Home</button> -->
+        </div>
+
+        <div id="navbar2">
+            <a class= "cameras" id="filmCamera" href="#"> <p>Film</p> </a>
+            <a class= "cameras" id="digitalCamera" href="#"> <p>Digital </p></a>
+        </div>
+
+        <div class="page" id="map">
+
+            <div class="popup" id="popupTrain">
+                <a class="close" id="trainClose" href="#">X</a>
+                <a class="modal" id="digitalPhotosTrain" href="images/trainstation.jpg"></a>
+                <p>Train Station in Porto</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer1">
+                    <source src="audio/train station.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupShip">
+                <a class="close" id="shipClose" href="#">X</a>
+                <a class="modal" id="digitalPhotosShip" href="images/ship.jpg"></a>
+                <p>Coastline in Porto</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer2">
+                    <source src="audio/water channel.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupPier">
+                <a class="close" id="pierClose" href="#">X</a>
+                <a class="modal" id="digitalPhotosPier" href="images/pier.jpg"></a>
+                <p>Padrão dos Descobrimentos</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer3">
+                    <source src="audio/crowd by port.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupCrowd">
+                <a class="close" id="crowdClose" href="#">X</a>
+                <a class="modal" id="digitalPhotosCrowd" href="images/crowd.jpg"></a>
+                <p>Streets in Lisbon</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer4">
+                    <source src="audio/crowd by church.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupCastle">
+                <a class="close" id="castleClose" href="#">X</a>
+                <a class="modal" id="digitalPhotosCastle" href="images/ship.jpg"></a>
+                <p>Park and National Palace of Pena</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer5">
+                    <source src="audio/crowd by market.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+
+
+
+
+            <div class="popup" id="popupBoat">
+                <a class="close" id="boatClose" href="#">X</a>
+                <a class="modal" id="filmPhotoBoat" href="images/pier3.jpg"></a>
+                <p>Nightime in Porto</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer6">
+                    <source src="audio/water channel.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupChurch">
+                <a class="close" id="churchClose" href="#">X</a>
+                <a class="modal" id="filmPhotoChurch" href="images/church.jpg"></a>
+                <p>Tiled Church in Porto</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer7">
+                    <source src="audio/church bells.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupCrowd2">
+                <a class="close" id="crowdClose" href="#">X</a>
+                <a class="modal" id="filmPhotoCrowd" href="images/crowd2.jpg"></a>
+                <p>Downtown crowd</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer8">
+                    <source src="audio/crowd with musician.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupPier2">
+                <a class="close" id="pierClose" href="#">X</a>
+                <a class="modal" id="filmPhotoPier" href="images/pier2.jpg"></a>
+                <p>Dom Luis Bridge</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer9">
+                    <source src="audio/crowd by port.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+            <div class="popup" id="popupStreet">
+                <a class="close" id="streetClose" href="#">X</a>
+                <a class="modal" id="filmPhotoStreet" href="images/street.jpg"></a>
+                <p>Old downtown</p>
+
+                <audio preload controls class="audioPlayer" id="audioPlayer10">
+                    <source src="audio/crowd by church.mp3" type="audio/mpeg"/>
+                </audio>
+            </div>
+
+
+
+
+            <div class="digitalMarkers">
+                <a class="marker" id="markerTrain" href="#"></a>
+                <a class="marker" id="markerShip" href="#"></a>
+                <a class="marker" id="markerPier" href="#"></a>
+                <a class="marker" id="markerCrowd" href="#"></a>
+                <a class="marker" id="markerCastle" href="#"></a>
+            </div>
+
+            <div class="filmMarkers">
+                <a class="marker" id="markerBoat" href="#"></a>
+                <a class="marker" id="markerChurch" href="#"></a>
+                <a class="marker" id="markerPier2" href="#"></a>
+                <a class="marker" id="markerCrowd2" href="#"></a>
+                <a class="marker" id="markerStreet" href="#"></a>
+            </div>
+
+
+
+            <div id="info">
+                <p>Chose a camera first!</p>
+                <a id="cameraButton" href="#">Ok, got it.</a>
+            </div>
+
+            <div class="points">
+
+            </div>
+        </div>
+
+    </div>
+
+        <script type="text/javascript" src="js/custom_behaviors.js">
+            
+        </script>
+    </body>
+</html>
+
+
+        
